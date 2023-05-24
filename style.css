@@ -1,5 +1,5 @@
 body{
-    background: radial-gradient(center top,#CCDAE0, #EDF2F4);
+    background: radial-gradient(at top center, #CCDAE0, #EDF2F4);
 }
 
 header{
@@ -63,3 +63,33 @@ span{
     color:red
 }
 
+.blog{
+    display:flex;
+    width: 100vw
+}
+
+.d1{
+    display:flex;
+    width: auto;
+    height: 0px;
+    padding-top: 75%;
+    box-shadow: 0px 0px 10px #777;
+    background-color: #EDEDED;
+    background-size: contain;
+    animation: fondu 15s ease-in-out infinite both;
+}
+.boite{
+    max-width: 576px;
+    margin: 50px auto;
+}
+
+.d1:hover{
+    animation-play-state: paused;
+}
+
+@keyframes fondu{
+    0%{background-image: url("img/carousselle/090703100315_7316.jpg");}
+    33.33%{background-image: url("img/carousselle/KillBill-ORenIshii.jpg");}
+    66.67%{background-image: url("img/carousselle/supman.jpg");}
+    100%{background-image: url("img/carousselle/TranscodedWallpaper.jpg");}
+}
